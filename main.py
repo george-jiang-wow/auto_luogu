@@ -2,8 +2,6 @@ import requests as r
 import time as t
 import urllib.parse as u
 import datetime
-#import csv
-#import math
 import os
 token = os.environ["token"]
 txt="""
