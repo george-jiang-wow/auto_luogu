@@ -20,7 +20,7 @@ B站榜一：
 
 ------
 """
-cookies={"__client_id":token,"_uid":"395758}
+cookies={"__client_id":token,"_uid":"395758"}
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 Edg/94.0.992.47 BOTE"}
 txt=txt.replace(".weibotop.",r.get("https://tenapi.cn/v2/weibohot").text.split('"name": "')[1].split('",')[0])
 txt=txt.replace(".date.",str(datetime.datetime.today()))
