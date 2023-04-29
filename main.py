@@ -10,6 +10,8 @@ txt="""
 
 现在的微博热搜：#.weibotop.#
 
+北京天气：.bjwe.
+
 更新时间（UTC）：.date.
 
 B站榜一：
@@ -24,6 +26,7 @@ txt=txt.replace(".weibotop.",r.get("https://tenapi.cn/v2/weibohot").text.split('
 txt=txt.replace(".date.",str(datetime.datetime.today()))
 txt=txt.replace(".bilibili.","av"+r.get("https://api.bilibili.com/x/web-interface/ranking/v2").text.split('"aid":')[1].split(',"videos"')[0])
 txt=txt.replace(".hitokoto.",r.get("https://v1.hitokoto.cn/").text.split('"hitokoto":"')[1].split('","typ')[0])
+txt=txt.replace(".bjwe.",r.get("http://t.weather.itboy.net/api/weather/city/101010100").text.split('"type":"')[1].split('","n')[0])
 first=r.get("https://v1.hitokoto.cn/").text.split('"hitokoto":"')[1].split('","typ')[0]
 re=r.get("https://www.luogu.com.cn/user/395758",headers=headers,cookies=cookies)
 headers["X-CSRF-TOKEN"]=re.text.split('name="csrf-token" content="')[1].split('">\n')[0]
