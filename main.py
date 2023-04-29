@@ -8,7 +8,7 @@ txt="""
 
 六分钟一言：.hitokoto.
 
-现在的微博热搜榜三：#.weibotop.#
+现在的微博热搜榜一：#.weibotop.#
 
 北京天气：.bjwe.
 
