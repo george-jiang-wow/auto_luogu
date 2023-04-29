@@ -6,7 +6,7 @@ import os
 token = os.environ["token"]
 txt="""
 
-今天的微博热搜：.weibotop.
+现在的微博热搜：#.weibotop.#
 
 更新时间（UTC）：.date.
 
