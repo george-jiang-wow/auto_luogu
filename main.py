@@ -4,11 +4,11 @@ import urllib.parse as u
 import datetime
 import os
 token = os.environ["token"]
-txt="""
+txt="""（本主页已启动自动更新）
 
-六分钟一言：.hitokoto.
+一言：.hitokoto.
 
-现在的微博热搜榜一：#.weibotop.#
+微博热搜榜一：#.weibotop.#
 
 北京天气：.bjwe.
 
@@ -18,8 +18,7 @@ B站榜一：
 
 ![](bilibili:.bilibili.)
 
-动态主页支持请私信。OIso订阅者支持免费代部署。
-"""
+每天George大概要处理很多很多条私信，所以如果你想给他发私信，你可以关注他或者成为OIso订阅者，可以加入优先队列"""
 cookies={"__client_id":token,"_uid":"395758"}
 headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36 Edg/94.0.992.47 BOTE"}
 txt=txt.replace(".weibotop.","["+r.get("https://tenapi.cn/v2/weibohot").text.split('"name": "')[1].split('",')[0]+"]("+r.get("https://tenapi.cn/v2/weibohot").text.split('"url": "')[1].split('"')[0]+")")
