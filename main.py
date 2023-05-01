@@ -4,7 +4,7 @@ import urllib.parse as u
 import datetime
 import os
 token = os.environ["token"]
-txt="""（本主页已启动自动更新）
+txt="""（主页已启动自动更新，所以我其实没有熬夜换主页。）
 
 一言：.hitokoto.
 
